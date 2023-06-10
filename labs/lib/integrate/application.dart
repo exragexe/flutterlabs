@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:labs/screens/home.dart';
+import 'package:labs/screens/welcome.dart';
 
-class Application extends StatelessWidget {
-  const Application({super.key});
+
+
+class Applications extends StatelessWidget {
+  const Applications({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    
+      return MaterialApp(
       routes: {
-      '/': (context) => const Home(),
+        '/': (context) => const Home(),
+        '/welcome':(context) => const Welcome(),
+        
       },
-      debugShowCheckedModeBanner: false,
+       debugShowCheckedModeBanner: false,
     );
+    
   }
 }
